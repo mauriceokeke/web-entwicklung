@@ -17,8 +17,6 @@
     --bs-navbar-hover-color: red;
 }
 
-
-
 /* bold text */
 .bold-text {
     font-weight: bold;
@@ -60,7 +58,6 @@ main {
 }
 
 
-
 /* Scrollbar style*/
 /* Create a custom scrollbar for Webkit-based browsers */
 body::-webkit-scrollbar {
@@ -69,15 +66,6 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-track {
     background: rgb(6,16,22); /* Track color */
-}
-
-body::-webkit-scrollbar-thumb {
-    background: white; /* Thumb color */
-    border-radius: 10px; /* Rounded corners */
-}
-
-body::-webkit-scrollbar-thumb:hover {
-    background: white; /* Thumb color on hover */
 }
 
 .edgy-container {
