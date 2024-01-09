@@ -15,7 +15,7 @@
 *.vi
 *.zip
 *~
-
+*.env
 # OS or Editor folders
 ._*
 .cache

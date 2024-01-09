@@ -3,34 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Startseite</title>
+    <title>Spalten</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="Style.css">
-
+    <link rel="stylesheet" href="<?php echo base_url();?>Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 <script src="https://unpkg.com/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg mb-4 ps-5">
-    <a class="navbar-brand" href="Startseite.html">
-        <img src="06_-_WE_Logo.svg" alt="logo.svg" height="60">
+    <a class="navbar-brand" href="<?php echo base_url();?>">
+        <img src="<?php echo base_url();?>06_-_WE_Logo.svg" alt="logo.svg" height="60">
     </a>
     <div class="collapse navbar-collapse" >
         <ul class="navbar-nav mr-auto">
 
             <li class="nav-item active">
-                <a class="nav-link active bold-text" aria-current="page" href="Startseite.html">Tasks</a>
+                <a class="nav-link active bold-text" aria-current="page" href="<?php echo base_url();?>">Tasks</a>
             </li>
 
             <li class="nav-item active">
-                <a class="nav-link active bold-text" aria-current="page" href="Startseite.html">Boards</a>
+                <a class="nav-link active bold-text" aria-current="page" href="#">Boards</a>
             </li>
 
 
             <li class="nav-item active">
-                <a class="nav-link active bold-text" aria-current="page" href="Spalten.html">Spalten</a>
+                <a class="nav-link active bold-text" aria-current="page" href="<?php echo base_url();?>Spalten">Spalten</a>
             </li>
 
         </ul>
@@ -38,21 +39,10 @@
 </nav>
 
 
-<!-- Tasks -->
-<main class="container">
-    <div class="card edgy-container">
-        <div class="card-body edgy-container">
-            <h4>Tasks</h4>
-        </div>
+<?= $this->renderSection('content') ?>
 
-        <ul class="list-group edgy-container">
-            <li class="list-group-item edgy-container">
-                <!-- <h5>to be continued...</h5> -->
-            </li>
-        </ul>
 
-    </div>
-</main>
+
 
 
 <!-- Footer -->
