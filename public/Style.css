@@ -1,0 +1,87 @@
+/* Set color variables*/
+:root {
+    --primary-color: rgb(12, 22, 28);
+    --highlight-color: yellow;
+    --hover-highlight-color: yellow;
+    --text-color: white;
+    --text-color-contrast: white;
+}
+
+
+/* Navbar style*/
+.navbar{
+    background-color: rgb(12, 22, 28);
+    height: 8em;
+    --bs-navbar-color: white;
+    --bs-navbar-active-color: white;
+    --bs-navbar-hover-color: red;
+}
+
+
+
+/* bold text */
+.bold-text {
+    font-weight: bold;
+}
+
+h4, h5 {
+    color: black; /* Set the desired text color for heading elements */
+}
+
+.custom-card-text {
+    color: white; /* Set the desired text color (in this case, green) */
+}
+
+.button {
+    background-color: red;
+}
+
+/* Footer Style*/
+footer{
+    background-color: rgb(36, 45, 50);
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Set minimum height to 100% of the viewport height */
+    overflow-y: scroll;
+    background-color: rgb(12, 22, 28);
+}
+
+main {
+    flex: 1; /* Allow main content to grow and take remaining space */
+    padding-bottom: 2em; /* Adjust to the height of the footer */
+}
+
+
+
+/* Scrollbar style*/
+/* Create a custom scrollbar for Webkit-based browsers */
+body::-webkit-scrollbar {
+    width: 12px; /* Set width of the scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(6,16,22); /* Track color */
+}
+
+body::-webkit-scrollbar-thumb {
+    background: white; /* Thumb color */
+    border-radius: 10px; /* Rounded corners */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: white; /* Thumb color on hover */
+}
+
+.edgy-container {
+    border-radius: 0; /* Remove rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    font-family: 'Montserrat', sans-serif; /* Use a modern font */
+}
